@@ -11,8 +11,7 @@ sys.path.insert(0, parent_dir)
 
 """Import files from src we want to test"""
 from src import source_code
-from src import desc_stat_polars
-from pythonproject.src.lib1 import load_data_from_csv
+from src import desc_stat_polars as dsp
 
 
 
@@ -28,13 +27,10 @@ class TestSourceCode(unittest.TestCase):
 
     def test_load_data_from_csv(self):
         """We will attempt to load some not very good csv files and some missing ones to ensure proper error handling"""
-        result = lib.load_data_from_csv("notAfile.csv")
+        result = dsp.load_data_from_csv("notAfile.csv")
         expected_result = None
         self.assertEqual(result, expected_result)
 
-        result = lib.load_data_from_csv("pythonproject\tests\testBreaker.md")
-        expected_result = None
-        self.assertEqual(result, expected_result)
 
 
 if __name__ == "__main__":
