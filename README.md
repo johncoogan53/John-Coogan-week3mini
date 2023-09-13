@@ -1,4 +1,4 @@
-[![Test workflow for Python template](https://github.com/johncoogan53/John-Coogan-week3mini/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/johncoogan53/John-Coogan-week3mini/actions/workflows/pythonapp.yml)
+[![Test workflow for Python template](https://github.com/johncoogan53/John-Coogan-week3mini/actions/workflows/pythonapp.yml/badge.svg?event=push)](https://github.com/johncoogan53/John-Coogan-week3mini/actions/workflows/pythonapp.yml)
 # This is the Week 3 mini project for Data Engineering
 ## This project includes:
 * python script using Polars for descriptive statistics
