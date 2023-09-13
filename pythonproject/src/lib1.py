@@ -13,9 +13,9 @@ def load_data_from_csv(file_path):
     except FileNotFoundError:
         print(f"File {file_path} not found")
         return None
-    except Exception as error:
-        print(f"Error while loading CSV File: {str(error)}")
-        return None
+    #except Exception as error:
+        #print(f"Error while loading CSV File: {str(error)}")
+        #return None
 
 
 def summary_statistics(dataframe):
